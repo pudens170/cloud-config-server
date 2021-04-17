@@ -6,7 +6,7 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     hostname: localhost
-    
+    preferIpAddress :true
     
 microservice:
   user-service:
@@ -17,3 +17,7 @@ microservice:
     endpoints:
       endpoint:
         uri: http://STUDENT-SERVICE/students    
+staff-service:
+    endpoints:
+      endpoint:
+        uri: http://STAFF-SERVICE/staffs    
